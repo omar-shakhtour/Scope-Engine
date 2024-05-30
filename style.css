@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  font-family: "Barlow", Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(37, 37, 37);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+body {
+    font: 16px Arial; /* change to em */
+}
+
+h1 {
+  text-align: center;
+  background-color: #eaba2d;
+  border-radius: 5px;
+  padding: 10px;
+
+}
+
+#parts_or_tech{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#parts_or_tech_buttons{
+  padding: 10px;
+  background-color: #eaba2d;
+  text-align: center;
+  border-style: none;
+  border-radius: 5px;
+}
+
+#parts_or_tech_buttons:hover{
+  background-color: #a7851f;
+  cursor: pointer;
+}
+
+#warranty{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.inputFields{
+  margin-top: 15px;
+}
+
+#autocomplete{
+    width: 300px; /* change to em */
+    background-color: #ffcc33;
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+  }
+
+  .autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #7f1414;
+  }
+
+  .autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+  }
+
+  .inputStyle{
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px; 
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+  .inputStyle[type=text]{
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+
+.suggestion {
+  padding: 10px;
+  cursor: pointer;
+  border-top: 1px solid #a7851f;
+  color: black;
+  background-color: #eaba2d;
+  
+}
+
+.suggestion:last-child{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.suggestion.hovered {
+  background-color: #a7851f; /* Change to whatever color you want */
+}
+
+.no-results {
+  padding: 5px;
+  color: rgb(244, 242, 192);
+  background-color: #eaba2d;
+  border-top: 1px solid #a7851f;
+}
+
+#detailsInput{
+  height: 100px;
+  width: 100%;
+  background-color: #f1f1f1;
+  border: 1px solid transparent;padding: 10px; 
+  font-size: 16px;
+  padding: 10px;
+  font-size: 16px;
+  resize: vertical;
+  border-radius: 5px;
+}
+
+

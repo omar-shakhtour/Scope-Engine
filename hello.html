@@ -1,0 +1,39 @@
+<html>
+  <link rel="stylesheet" href="style.css">
+  <script src="engine.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap');
+  </style>
+  <body>
+    <h1>Scope Engine</h1>
+    <div id="parts_or_tech">
+      <button id="parts_or_tech_buttons">Parts Only</button>
+      <button id="parts_or_tech_buttons">Parts & Tech </button>
+      <button id="parts_or_tech_buttons">Tech Only</button>
+    </div>
+    <div id="warranty">
+      <button id="parts_or_tech_buttons">Under Warranty</button>
+      <button id="parts_or_tech_buttons">Approved Fee </button>
+    </div>
+    <div class="inputFields">
+    <form autocomplete="off">
+      <div id="autocomplete">
+      <input id="scopeInput" class="inputStyle" type="text" placeholder="Enter service type">
+      <div id="suggestions"></div> 
+    </div>
+  </form>
+    <form autocomplete="off">
+      <div id="autocomplete">
+      <input id="toolsInput" class="inputStyle" type="text" placeholder="Enter special tools">
+      <div id="toolsSuggestions"></div> <!--This will need to display all the services as they are searched in the database-->
+    </div>
+    </form>
+    <form autocomplete="off">
+      <div id="autocomplete">
+      <textarea id="detailsInput" type="text" placeholder="Property details (hours, parking, etc.)" cols="40" rows="5"></textarea>
+    </div>
+    </form>
+    </div>
+    <button id="parts_or_tech_buttons">Copy to Clipboard</button>
+  </body>
+</html>
